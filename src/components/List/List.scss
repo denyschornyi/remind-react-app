@@ -1,0 +1,46 @@
+.list {
+  margin-bottom: 30px;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    &.active {
+      background: #fff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+    }
+    i {
+      margin-right: 8px;
+    }
+    .badge {
+      width: 10px;
+      height: 10px;
+      border-radius: 30px;
+      display: block;
+      position: relative;
+      left: 5px;
+      &--green {
+        background-color: #42b883;
+      }
+      &--blue {
+        background-color: #64c4ed;
+      }
+      &--pink {
+        background-color: #ffbbcc;
+      }
+    }
+  }
+  img {
+    display: block;
+    height: 10px;
+    width: 10px;
+    opacity: 0.6;
+    position: relative;
+    left: 5px;
+    margin-right: 8px;
+  }
+}
