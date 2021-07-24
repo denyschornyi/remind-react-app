@@ -1,6 +1,17 @@
 .list {
   margin-bottom: 30px;
 
+  &__add-button {
+    span {
+      opacity: 0.4;
+    }
+    &:hover {
+      img,
+      span {
+        opacity: 1;
+      }
+    }
+  }
   li {
     display: flex;
     align-items: center;
