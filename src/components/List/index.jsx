@@ -1,9 +1,9 @@
 import "./List.scss";
 import classNames from "classnames";
 
-const List = ({ items, isRemovable }) => {
+const List = ({ items, isRemovable, onClick }) => {
   return (
-    <ul className="list">
+    <ul className="list" onClick={onClick}>
       {items.map((item, index) => (
         <li
           key={index}

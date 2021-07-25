@@ -1,6 +1,8 @@
 import List from "./components/List";
 import listSvg from "./assets/img/list.svg";
-import add from "./assets/img/add.svg";
+import AddButtonList from "./components/AddButtonList";
+
+import DB from "./assets/db.json";
 
 function App() {
   return (
@@ -23,15 +25,7 @@ function App() {
           ]}
           isRemovable
         />
-        <List
-          items={[
-            {
-              className: "list__add-button",
-              icon: <img src={add} alt="Add folder" />,
-              name: "Add folder"
-            }
-          ]}
-        />
+        <AddButtonList colors={DB.colors} />
       </div>
       <div className="todo__tasks"></div>
     </div>

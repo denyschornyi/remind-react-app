@@ -1,0 +1,25 @@
+{
+  "lists": [
+    { "id": 1, "name": "Frontend", "colorId": 5 },
+    { "id": 2, "name": "Daily basis", "colorId": 4 },
+    { "id": 3, "name": "Films and series", "colorId": 3 },
+    { "id": 4, "name": "Books", "colorId": 2 },
+    { "id": 5, "name": "Private", "colorId": 1 }
+  ],
+  "tasks": [
+    { "id": 1, "listId": 2, "text": "Become a Senior React Dev" },
+    { "id": 2, "listId": 2, "text": "Learn programing paterns" },
+    { "id": 3, "listId": 2, "text": "React useful hooks" },
+    { "id": 4, "listId": 2, "text": "Redux, redux-saga" }
+  ],
+  "colors": [
+    { "id": 1, "hex": "#C90103", "name": "grey" },
+    { "id": 2, "hex": "#42B883", "name": "green" },
+    { "id": 3, "hex": "#64C4ED", "name": "blue" },
+    { "id": 4, "hex": "#FFBBCC", "name": "pink" },
+    { "id": 5, "hex": "#86E6DB", "name": "lime" },
+    { "id": 6, "hex": "#C355F5", "name": "purple" },
+    { "id": 7, "hex": "#110133", "name": "black" },
+    { "id": 8, "hex": "#FF6464", "name": "red" }
+  ]
+}
