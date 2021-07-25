@@ -6,10 +6,20 @@ import add from "../../assets/img/add.svg";
 import closeSvg from "../../assets/img/close.svg";
 import "./AddButtonList.scss";
 
-const AddButtonList = ({ colors }) => {
+const AddButtonList = ({ colors, onAdd }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [selectedColor, setSelectedColor] = useState(colors[0].id);
   const [inputValue, setInputValue] = useState("");
+
+  const addList = () => {
+    if (!inputValue) {
+      alert("Please provide a value");
+      return;
+    }
+
+    const color = colors.filter((c) => c.id === selectedColor)[0].name;
+    onAdd({ id: Math.random(), name: inputValue, color: color });
+  };
 
   return (
     <div className="add-list">
@@ -48,7 +58,9 @@ const AddButtonList = ({ colors }) => {
               />
             ))}
           </div>
-          <button className="button">Add</button>
+          <button onClick={addList} className="button">
+            Add
+          </button>
         </div>
       )}
     </div>

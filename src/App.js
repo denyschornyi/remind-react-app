@@ -14,8 +14,13 @@ function App() {
       return item;
     })
   );
-  console.log(lists);
-  console.log(lists.length);
+
+  const onAddList = (obj) => {
+    console.log(obj);
+    const newLists = [...lists, obj];
+    setLists(newLists);
+  };
+
   return (
     <div className="todo">
       <div className="todo__sidebar">
@@ -31,7 +36,7 @@ function App() {
           />
         )}
         <List items={lists} isRemovable />
-        <AddButtonList colors={DB.colors} />
+        <AddButtonList onAdd={onAddList} colors={DB.colors} />
       </div>
       <div className="todo__tasks"></div>
     </div>
