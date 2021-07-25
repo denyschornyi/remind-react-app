@@ -18,11 +18,12 @@ function App() {
           ]}
         />
         <List
-          items={[
-            { color: "green", name: "Frontend" },
-            { color: "blue", name: "Daily basis" },
-            { color: "pink", name: "Movies and series" }
-          ]}
+          items={DB.lists.map((item) => {
+            item.color = DB.colors.filter(
+              (color) => color.id === item.colorId
+            )[0].name;
+            return item;
+          })}
           isRemovable
         />
         <AddButtonList colors={DB.colors} />

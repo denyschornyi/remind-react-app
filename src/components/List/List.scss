@@ -19,6 +19,10 @@
     cursor: pointer;
     margin-bottom: 5px;
 
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
     &.active {
       background: #fff;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
